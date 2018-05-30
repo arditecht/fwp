@@ -1,10 +1,3 @@
-function Warehouse(){
-    
-}
-
-
-
-
 /* 
     # WHY ANOTHER COMPONENT?
     Faceless, meaningless, low-level browser events(a.k.a. physical events) and programs on them don't bear any resemblence to the dev's intention
