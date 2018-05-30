@@ -1,0 +1,3 @@
+function domVirtualizer(){
+    var self = {};
+}
