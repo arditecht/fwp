@@ -1,7 +1,5 @@
 function event(){
     var self = {};
-    self.info = {
-        for : undefined,
-
-    }
+    self.info = {}
+    
 }
