@@ -1,5 +1,11 @@
 function article(conf){
-    var realdom = conf.representsDom;
-    
     var self = {};
+    var is_logical = false;
+
+    function getData(){
+
+    }
+    function setData(){
+        
+    }
 }
