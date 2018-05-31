@@ -19,6 +19,12 @@ body {
   #titleDesc {
     font-size: 14px;
   }
+
+  #appSpace {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
   
   #editor {
     width: 1400px;
