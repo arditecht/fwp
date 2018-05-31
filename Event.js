@@ -1,4 +1,0 @@
-function event(){
-    var self = {};
-    
-}
