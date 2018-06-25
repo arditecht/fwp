@@ -444,8 +444,6 @@ function initPersistor(){
 	
 	// ############################# DB promise and object-stores creation below ########################################
 	
-	
-	
 	function init(){
 		if(dependency_success){
 			try{
