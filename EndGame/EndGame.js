@@ -12,7 +12,7 @@ function StateTransitTableFiller(container, opts){
     }
     var default_states = ['init', 'halt'];
     var default_accept_events = ['parent_created', 'parent_ended']; // know about the other's emitted events
-    var default_emit_events = ['created', 'ended']; // let others know of own emmitted events
+    var default_emit_events = ['created', 'ended']; // let others know of own emitted events
 
     var table = jQuery('table');
     
