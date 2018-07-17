@@ -24,7 +24,7 @@
   }
 
   #appSpace {
-    width: 90vw;
+    width: 92vw;
     height: 85vh;
     display: inline-block;
     background-color: #bbb;
@@ -49,10 +49,11 @@
   table#phaseScale {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
-    border-bottom: 1px solid darkorange;
-    padding: 5px;
+    border-bottom: 4px solid tomato;
     table-layout: fixed;
-    margin-bottom: 3px;
+    margin-bottom: -3px;
+    margin-top: 5px;
+    padding-bottom: 5px;
   }
 
   table#phaseScale td{
