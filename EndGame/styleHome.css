@@ -52,6 +52,7 @@
     border-bottom: 1px solid darkorange;
     padding: 5px;
     table-layout: fixed;
+    margin-bottom: 3px;
   }
 
   table#phaseScale td{
