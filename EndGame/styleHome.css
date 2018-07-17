@@ -28,13 +28,6 @@
     height: 900px;
     overflow: hidden;
   }
-
-  #appSpace table {
-    width: 100%;
-    height: 100%;
-    border-color: #ccc;
-    color: white;
-  }
   
   #editor {
     width: 1400px;
