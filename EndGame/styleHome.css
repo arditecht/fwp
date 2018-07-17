@@ -40,6 +40,10 @@
     display: inline-block;
     background-color: #666;
   }
+  div#footnote {
+    text-align: center;
+    display: block;
+  }
 
   table#controllerPort{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
