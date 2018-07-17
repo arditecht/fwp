@@ -37,7 +37,7 @@
   table#phaseScale {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
-    border-bottom: 1px solid #bbb;
+    border-bottom: 1px solid darkorange;
     padding: 5px;
     table-layout: fixed;
   }
@@ -45,6 +45,7 @@
   table#phaseScale td{
     overflow: hidden;
     text-align: center;
+    border-radius: 10px;
   }
 
   td.selectedPhase {
