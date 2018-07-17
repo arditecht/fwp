@@ -21,6 +21,7 @@
   
   #titleDesc {
     font-size: 14px;
+    color: lightslategray;
   }
 
   #appSpace {
@@ -40,6 +41,7 @@
     display: inline-block;
     background-color: #666;
   }
+
   div#footnote {
     text-align: center;
     display: block;
