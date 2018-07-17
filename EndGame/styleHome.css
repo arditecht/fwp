@@ -43,6 +43,9 @@
   div#footnote {
     text-align: center;
     display: block;
+    border-top: 3px solid tomato;
+    margin-top: -3px;
+    padding-top: 8px;
   }
 
   table#controllerPort{
