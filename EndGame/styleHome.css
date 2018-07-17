@@ -54,8 +54,6 @@
   table#controllerPort{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
-    border-spacing: 0;
-    border-collapse: collapse;
   }
 
   table#phaseScale {
