@@ -1,6 +1,6 @@
 function setup() { 
     var canvas = createCanvas(800, 400);
-    canvas.parent('appSpace');
+    canvas.parent('sketchSpace');
 } 
 
 function draw() { 

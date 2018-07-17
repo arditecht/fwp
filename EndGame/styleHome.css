@@ -3,6 +3,7 @@
     color: #bbb;
     margin: 0;
     padding: 0;
+    overflow: hidden;
   }
 
   #titleHeader {
@@ -23,15 +24,20 @@
   }
 
   #appSpace {
-    width: 1100px;
-    height: 900px;
+    width: 85%;
+    height: 90%;
+    display: inline-block;
+    background-color: #bbb;
   }
-  
-  #editor {
-    width: 1400px;
-    height: 852px;
-    border: 0.5px solid #555;
-    margin-top: 10px;
+
+  #sketchSpace {
+    display: none;
+  }
+
+  div.buttonPanel {
+    width: 5%;
+    height: 90%;
+    display: inline-block;
   }
 
   table#phaseScale {
