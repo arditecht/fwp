@@ -60,9 +60,10 @@
     overflow: hidden;
     text-align: center;
     border-radius: 10px;
+    color: dimgrey;
   }
 
-  td.selectedPhase {
+  table#phaseScale td.selectedPhase {
     font-weight: bold;
     color: tomato;
     background-color: #333;
