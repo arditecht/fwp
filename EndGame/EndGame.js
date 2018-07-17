@@ -1,4 +1,10 @@
 // a configuration generator that represents the story in terms of articles, their states and different events
+function edfsmDefinitionTool(){
+    
+}
+
+
+
 function StateTransitTableFiller(container, opts){
     // later opts can be used for resurrection
     if(!jQuery){
