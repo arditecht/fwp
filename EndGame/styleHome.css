@@ -3,6 +3,7 @@
     color: #bbb;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
   }
 
   #titleHeader {
@@ -24,7 +25,7 @@
 
   #appSpace {
     width: 90vw;
-    height: 90vh;
+    height: 85vh;
     display: inline-block;
     background-color: #bbb;
   }
@@ -34,9 +35,19 @@
   }
 
   div.buttonPanel {
-    width: 5vw;
-    height: 90vh;
+    width: 4vw;
+    height: 85vh;
     display: inline-block;
+    background-color: #666;
+  }
+
+  table#controllerPort{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    padding: 5px;
+  }
+  table#controllerPort td{
+    margin: 3px;
   }
 
   table#phaseScale {
