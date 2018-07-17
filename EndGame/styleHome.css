@@ -65,6 +65,7 @@
     text-align: center;
     border-radius: 10px;
     color: dimgrey;
+    cursor: pointer;
   }
 
   table#phaseScale td.selectedPhase {
@@ -72,3 +73,6 @@
     color: tomato;
     background-color: #333;
   }
+
+  /* General Purpose Pluggables */
+  .pointer {cursor: pointer;}
