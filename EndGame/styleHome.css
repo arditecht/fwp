@@ -3,7 +3,6 @@
     color: #bbb;
     margin: 0;
     padding: 0;
-    overflow: hidden;
   }
 
   #titleHeader {
@@ -24,8 +23,8 @@
   }
 
   #appSpace {
-    width: 85%;
-    height: 90%;
+    width: 85vw;
+    height: 90vh;
     display: inline-block;
     background-color: #bbb;
   }
@@ -35,8 +34,8 @@
   }
 
   div.buttonPanel {
-    width: 5%;
-    height: 90%;
+    width: 5vw;
+    height: 90vh;
     display: inline-block;
   }
 
