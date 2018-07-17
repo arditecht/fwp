@@ -87,3 +87,13 @@
   .blinker {
     color: #888;
   }
+
+  table#phaseScale {
+    width: 100%;
+    border: 1px solid white;
+    padding: 5px;
+  }
+
+  td.selectedPhase {
+    font-weight: bold;
+  }
