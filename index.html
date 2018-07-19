@@ -2,15 +2,18 @@
     <head>
         <link rel="stylesheet" href="EndGame/styleHome.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!--
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/p5.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js"></script>
         <script src="EndGame/sketch.js"></script>
-        <script src="EndGame/EndGame.js"></script>
+        -->
         <title>
             Articulated Client Flow Visualization and Sharing
         </title>
     </head>
+    
     <body>
+        
         <div id="titleHeader" class="pointer">
             <span title="Collaborate, Visualize and Create a Service Oriented Client-side flow">
                 <b>C</b>lient<b>B</b>uilder
@@ -21,7 +24,7 @@
         </div>
         <table id="phaseScale">
             <tr>
-                <td class="selectedPhase">Enter Page Details</td>
+                <td class="selectedPhase">Service Page Details</td>
                 <td>Create Article Tree</td>
                 <td>Specify State Transitions</td>
                 <td>Code Transition Actions</td>
@@ -31,14 +34,20 @@
             <tr>
                 <td>
                     <div id="appSpace">
-                        <div id="sketchSpace"></div>
+                        
                     </div>
                 </td>
-                <td><div class="buttonPanel"></div></td>
+                <td>
+                    <div class="buttonPanel"></div>
+                </td>
             </tr>
         </table>
         <div id="footnote">
             <span>Software is a symphony of Architecture and Collaboration. Code is just the stage performance.</span>
         </div>
+
+        <script src="/ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+        <script src="EndGame/EndGame.js"></script>
+
     </body>
 </html>
