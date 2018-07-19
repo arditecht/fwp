@@ -9,4 +9,4 @@ setTimeout(function(){
     editor.setTheme("ace/theme/ambiance");
     editor.getSession().setMode("ace/mode/javascript");
     editor.focus();
-}, 10);
+}, 100);
