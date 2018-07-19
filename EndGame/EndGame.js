@@ -7,5 +7,5 @@ editor.setOptions({
     highlightActiveLine: true
 });
 editor.setTheme("ace/theme/ambiance");
-editor.getSession().setMode("ace/mode/javascript");
+editor.getSession().setMode("ace/mode/json");
 editor.focus();
