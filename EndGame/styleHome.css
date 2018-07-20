@@ -38,7 +38,8 @@
 
   .editor {
     height: 100%;
-    border: 0.5px solid #555;
+    border: 0.5px solid #222;
+    border-right: 1px solid tomato;
   }
 
   div.buttonPanel {
