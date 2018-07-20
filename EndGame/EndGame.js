@@ -45,6 +45,7 @@ function initClientBuilder(){
                 return;
             } else {
                 current_phase ++;
+                jQuery("button#prevPhase").attr('disabled', 'false');
                 if(current_phase === num_phases){
                     jQuery(ev.target).attr('disabled', 'true');
                 }
@@ -56,6 +57,7 @@ function initClientBuilder(){
                 return;
             } else {
                 current_phase --;
+                jQuery("button#nextPhase").attr('disabled', 'false');
                 if(current_phase === 1){
                     jQuery(ev.target).attr('disabled', 'true');
                 }
