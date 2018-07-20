@@ -108,6 +108,7 @@
     background-color: #3e3e3e;
   }
 
-  /* General Purpose Pluggables */
+  /* General Purpose Pluggables or Apply-alls */
   .pointer {cursor: pointer;}
   .hidden {display: none;}
+  :focus {outline:none;}
