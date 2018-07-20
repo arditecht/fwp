@@ -35,7 +35,7 @@ function initClientBuilder(){
         let selectedEditorName = editor_names[phasenum-1];
         let all_editors = jQuery("div.editor");
         jQuery(all_editors).hide();
-        jQuery(all_editors).find("#"+selectedEditorName).show();
+        jQuery("div#"+selectedEditorName).show();
     }
 
     (function initiateBuildingIIFE(){
@@ -46,7 +46,7 @@ function initClientBuilder(){
             } else {
                 current_phase ++;
                 if(current_phase === num_phases){
-                    jQuery(ev.target).disable();
+                    jQuery(ev.target).attr('disabled', 'true');
                 }
             }
             selectPhaseByNum(current_phase);
@@ -57,7 +57,7 @@ function initClientBuilder(){
             } else {
                 current_phase --;
                 if(current_phase === 1){
-                    jQuery(ev.target).disable();
+                    jQuery(ev.target).attr('disabled', 'true');
                 }
             }
             selectPhaseByNum(current_phase);
