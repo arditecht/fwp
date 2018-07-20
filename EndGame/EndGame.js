@@ -49,7 +49,7 @@ function initClientBuilder(){
             // hide all editors except the one's phase selected
             jQuery(all_editors).hide();
             jQuery("div#"+selectedEditorName).show();
-        }, 100);
+        }, 300);
         let all_editors = jQuery("div.editor");
         // disabling/enabling the right buttons below
         if(phasenum === num_phases){
