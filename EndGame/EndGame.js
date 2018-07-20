@@ -34,8 +34,8 @@ function initClientBuilder(){
         jQuery("table#phaseScale").find("td#phase"+phasenum).addClass("selectedPhase");
         let selectedEditorName = editor_names[phasenum-1];
         let all_editors = jQuery("div.editor");
-        all_editors.hide();
-        all_editors.find("#"+selectedEditorName).show();
+        jQuery(all_editors).hide();
+        jQuery(all_editors).find("#"+selectedEditorName).show();
     }
 
     (function initiateBuildingIIFE(){
