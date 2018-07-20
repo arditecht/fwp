@@ -76,6 +76,13 @@
     font-family: monospace;
   }
 
+  table#buttonlist button:disabled {
+    background-color: #3b3b3b;
+    border-color: rgb(59, 32, 27);
+    color: rgb(185, 185, 185);
+    cursor: default;
+  }
+
   table#phaseScale {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
