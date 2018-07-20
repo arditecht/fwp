@@ -6,6 +6,7 @@ jQuery(document).ready(function() {
 
 function initClientBuilder(){
     var editor_names = ['service', 'levels', 'fsmedit', 'actions'];
+    var num_phases = editor_names.length;
     var current_phase = 1;
     function getPreEditedValue(editor_name){
         // later get it from server or uploaded progress
@@ -34,21 +35,27 @@ function initClientBuilder(){
         jQuery("table#phaseScale").find("td#phase"+phasenum).addClass("selectedPhase");
         let selectedEditorName = editor_names[phasenum-1];
         let all_editors = jQuery("div.editor");
+        // hide all editors except the one's phase selected
         jQuery(all_editors).hide();
         jQuery("div#"+selectedEditorName).show();
+        // disabling/enabling the right buttons below
+        if(phasenum === num_phases){
+            jQuery("button#nextPhase").attr('disabled', 'true');
+        } else if (phasenum === 1) {
+            jQuery("button#prevPhase").attr('disabled', 'true');
+        } else {
+            jQuery("button#prevPhase").attr('disabled', 'false');
+            jQuery("button#nextPhase").attr('disabled', 'false');
+        }
     }
 
     (function initiateBuildingIIFE(){
-        var num_phases = editor_names.length;
+        
         jQuery("button#nextPhase").click(function(ev){
             if(current_phase === num_phases){
                 return;
             } else {
                 current_phase ++;
-                jQuery("button#prevPhase").attr('disabled', 'false');
-                if(current_phase === num_phases){
-                    jQuery(ev.target).attr('disabled', 'true');
-                }
             }
             selectPhaseByNum(current_phase);
         });
@@ -57,10 +64,6 @@ function initClientBuilder(){
                 return;
             } else {
                 current_phase --;
-                jQuery("button#nextPhase").attr('disabled', 'false');
-                if(current_phase === 1){
-                    jQuery(ev.target).attr('disabled', 'true');
-                }
             }
             selectPhaseByNum(current_phase);
         });
