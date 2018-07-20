@@ -62,6 +62,6 @@ function initClientBuilder(){
             }
             selectPhaseByNum(current_phase);
         });
-        selectPhaseByNum(current_phase);
+        selectPhaseByNum(current_phase);    // initiate editing in the phase
     })();
 }
