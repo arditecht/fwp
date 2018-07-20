@@ -44,8 +44,8 @@ function initClientBuilder(){
         } else if (phasenum === 1) {
             jQuery("button#prevPhase").attr('disabled', 'true');
         } else {
-            jQuery("button#prevPhase").attr('disabled', 'false');
-            jQuery("button#nextPhase").attr('disabled', 'false');
+            jQuery("button#prevPhase").removeAttr('disabled');
+            jQuery("button#nextPhase").removeAttr('disabled');
         }
     }
 
