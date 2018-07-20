@@ -102,7 +102,7 @@
     text-align: center;
     border-radius: 4px;
     color: dimgrey;
-    cursor: pointer;
+    cursor: default;
   }
 
   table#phaseScale td.selectedPhase {
