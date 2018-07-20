@@ -13,7 +13,7 @@
 //				}
 //			}
 var DB_SCHEMA = {
-			SDPlogs: {
+			fwp: {
 				keyPath: 'sno',			// No i18N
 				autoIncrement: true
 			}
