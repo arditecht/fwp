@@ -9,8 +9,7 @@ function initClientBuilder(){
     var num_phases = editor_names.length;
     var current_phase = 1;
     function getPreEditedValue(editor_name){
-        // later get it from server or uploaded progress
-        return "";
+        return keyshelf.get(editor_name);
     }
     // initiating all the editors
     editor_names.forEach(function(name){
@@ -27,10 +26,17 @@ function initClientBuilder(){
         } else {
             editor.getSession().setMode("ace/mode/json");
         }
-        editor.session.setValue(getPreEditedValue(name));
+        getPreEditedValue(name).then(function(data){
+            if(data){
+                editor.session.setValue(data);
+            } else {
+                editor.session.setValue("");
+            }
+        });
+        
         editor.session.on('change', function(delta) {
-            // delta.start, delta.end, delta.lines, delta.action
-            debugger;
+            // delta.start, delta.end, delta.lines, delta.action for properties of that specific change
+            keyshelf.set(name, editor.getValue());
         });
     });
 
