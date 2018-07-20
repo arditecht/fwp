@@ -47,10 +47,10 @@ function initClientBuilder(){
         let selectedEditorName = editor_names[phasenum-1];
         setTimeout(function(){  // putting delay just for handling some random rendering jitter.
             // hide all editors except the one's phase selected
+            let all_editors = jQuery("div.editor");
             jQuery(all_editors).hide();
             jQuery("div#"+selectedEditorName).show();
-        }, 300);
-        let all_editors = jQuery("div.editor");
+        }, 500);
         // disabling/enabling the right buttons below
         if(phasenum === num_phases){
             jQuery("button#nextPhase").attr('disabled', 'true');
