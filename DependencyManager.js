@@ -265,6 +265,12 @@ var requisite; // global object to interface with dependencies for all component
 
 // the only object with self dependence in fwp
 (function(self_dependence){
+	function call_fn(fn, opts){
+		if(typeof fn === "function"){
+			return fn(opts);
+		}
+		return null;
+	}
 	if(!self_dependence) {
 		// if dependency manager's self dependence is false, means NO module will initialize as dependencies can never be "taken" & would've to fallback
 		requisite = {	// simply a default object saying NO to all dependency requests
