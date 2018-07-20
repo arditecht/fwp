@@ -45,7 +45,7 @@
     width: 7vw;
     height: 85vh;
     display: inline-block;
-    background-color: #666;
+    background-color: #222;
   }
 
   div#footnote {
@@ -59,6 +59,15 @@
   table#controllerPort{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 100%;
+  }
+
+  table#buttonlist{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+  }
+
+  table#buttonlist button{
+    background-color: #bbb;
   }
 
   table#phaseScale {
@@ -87,3 +96,4 @@
 
   /* General Purpose Pluggables */
   .pointer {cursor: pointer;}
+  .hidden {display: none;}
