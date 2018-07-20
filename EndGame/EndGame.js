@@ -28,11 +28,10 @@ function initClientBuilder(){
             editor.getSession().setMode("ace/mode/json");
         }
         editor.session.setValue(getPreEditedValue(name));
-    });
-
-    editor.session.on('change', function(delta) {
-        // delta.start, delta.end, delta.lines, delta.action
-        debugger;
+        editor.session.on('change', function(delta) {
+            // delta.start, delta.end, delta.lines, delta.action
+            debugger;
+        });
     });
 
     function selectPhaseByNum(phasenum){
