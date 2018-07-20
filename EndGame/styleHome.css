@@ -75,6 +75,7 @@
     color: azure;
     font-size: large;
     font-family: monospace;
+    border-radius: 35px;
   }
 
   table#buttonlist button:disabled {
