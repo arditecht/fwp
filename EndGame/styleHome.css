@@ -67,7 +67,13 @@
   }
 
   table#buttonlist button{
-    background-color: #bbb;
+    background-color: #322222;
+    width: 100%;
+    border-color: tomato;
+    height: 55px;
+    color: azure;
+    font-size: large;
+    font-family: monospace;
   }
 
   table#phaseScale {
