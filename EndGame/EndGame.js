@@ -26,6 +26,7 @@ function initClientBuilder(){
         } else {
             editor.getSession().setMode("ace/mode/json");
         }
+        // repopulation step -- comletes latest.
         getPreEditedValue(name).then(function(data){
             if(data){
                 editor.session.setValue(data);
@@ -44,10 +45,12 @@ function initClientBuilder(){
         jQuery("table#phaseScale").find("td").removeClass("selectedPhase");
         jQuery("table#phaseScale").find("td#phase"+phasenum).addClass("selectedPhase");
         let selectedEditorName = editor_names[phasenum-1];
+        setTimeout(function(){  // putting delay just for handling some random rendering jitter.
+            // hide all editors except the one's phase selected
+            jQuery(all_editors).hide();
+            jQuery("div#"+selectedEditorName).show();
+        }, 100);
         let all_editors = jQuery("div.editor");
-        // hide all editors except the one's phase selected
-        jQuery(all_editors).hide();
-        jQuery("div#"+selectedEditorName).show();
         // disabling/enabling the right buttons below
         if(phasenum === num_phases){
             jQuery("button#nextPhase").attr('disabled', 'true');
