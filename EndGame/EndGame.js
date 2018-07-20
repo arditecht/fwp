@@ -50,10 +50,9 @@ function initClientBuilder(){
     }
 
     (function initiateBuildingIIFE(){
-        
         jQuery("button#nextPhase").click(function(ev){
             if(current_phase === num_phases){
-                return;
+                return; // JIC
             } else {
                 current_phase ++;
             }
@@ -61,12 +60,15 @@ function initClientBuilder(){
         });
         jQuery("button#prevPhase").click(function(ev){
             if(current_phase === 1){
-                return;
+                return; //JIC
             } else {
                 current_phase --;
             }
             selectPhaseByNum(current_phase);
         });
-        selectPhaseByNum(current_phase);    // initiate editing in the phase
+        jQuery("button#downloadProgress").click(function(ev){});    // download configuration generated so far
+        jQuery("button#uploadProgress").click(function(ev){});  // uploaded a pre downloaded configuration
+        // initiate editing in the starting phase
+        selectPhaseByNum(current_phase);
     })();
 }
