@@ -78,7 +78,7 @@
 
   table#buttonlist button:disabled {
     background-color: #3b3b3b;
-    border-color: rgb(59, 32, 27);
+    border-color: dimgray;
     color: rgb(185, 185, 185);
     cursor: default;
   }
