@@ -30,6 +30,11 @@ function initClientBuilder(){
         editor.session.setValue(getPreEditedValue(name));
     });
 
+    editor.session.on('change', function(delta) {
+        // delta.start, delta.end, delta.lines, delta.action
+        debugger;
+    });
+
     function selectPhaseByNum(phasenum){
         jQuery("table#phaseScale").find("td").removeClass("selectedPhase");
         jQuery("table#phaseScale").find("td#phase"+phasenum).addClass("selectedPhase");
